@@ -12,7 +12,7 @@ function App() {
 
   const toggleParagraphHandler = useCallback(() => {
     if (allowToggle) {
-      setShowParagraph(prevShowParagraph => !prevShowParagraph);
+      setShowParagraph((prevShowParagraph) => !prevShowParagraph);
     }
   }, [allowToggle]);
 
@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className='app'>
       <h1>Hi there!</h1>
       <DemoOutput show={showParagraph} />
       <Button onClick={allowToggleHandler}>Allow Toggling</Button>
